@@ -1,56 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap');
 
 body {
-   font-family: "Outfit", sans-serif;
-   margin: 0;
-   padding: 0;
+
+  margin: 0;
+  padding: 0;
+
 }
 
-/* :root{
-    
-} */
-
-header{
-height: 4rem;   
-background-color: #fff;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+header .navbar {
+  display: flex;
+  justify-content: space-around
 }
 
 .navbar{
-  width: 100%;
-  height: 100%;
+  margin-top: 32px;
+  box-shadow: 0 4px 24px rgba(168, 159, 255, 0.12), 0 1.5px 6px rgba(17, 0, 83, 0.08);
+  background: #fff;
+  border-radius: 18px;
+ 
+  
 }
 
-header .navbar{
-    display: flex;
-    justify-content:space-around
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.start-left ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .navbar ul li {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
 
 }
 
-header .navbar ul{
-    display: flex;
-    align-items:start ;
-
-    gap: 20px; 
-    list-style: none;
+header .navbar ul li a {
+  text-decoration: none;
+  color: #110053;
+  font-size: 15px;  
 }
 
-header .navbar ul li{
-    font-size: 20px;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
+header .navbar ul li a:hover {
+  color: #a89fff;
 }
 
-header .navbar ul li a{
-    text-decoration: none;
-    color: #110053;
-    font-size: 15px;
-}
-
-header .navbar ul li a:hover{
-    color: #a89fff;
+.dropdown .abroad-dialogbox .start-left ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
 /* underline hover animation start */
@@ -64,12 +69,12 @@ header .navbar ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom:-10px;
+  bottom: -10px;
   width: 100%;
   height: 0.2rem;
   background: #a89fff;
   transform: scaleX(0);
-  transform-origin:left;
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 
@@ -88,19 +93,20 @@ header .navbar ul li a:hover::after {
   font-weight: 100;
 }
 
-.down{
-    transform: rotate(45deg);
+.down {
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
 
-i{
-    font-size: 10px;
-    color: #110053;
-    margin-bottom: 0.2rem;
-    margin-left: .3rem;
-   
-    
+i {
+  font-size: 10px;
+  color: #110053;
+  margin-bottom: 0.2rem;
+  margin-left: .3rem;
+
+
 }
+
 /* arrow down css end  */
 
 
@@ -123,11 +129,12 @@ i{
   padding: 1rem;
   display: none;
   z-index: 100;
-  
+
 }
 
-.abroad-dialogbox ul{
-  display: flex;;
+.abroad-dialogbox ul {
+  display: flex;
+  ;
   flex-direction: column;
   gap: 0.3rem !important;
 
@@ -146,12 +153,12 @@ i{
   margin: 0.3rem 0;
 }
 
-header .navbar .abroad-dialogbox ul  {
-  
-  padding: 0.5rem; 
+header .navbar .abroad-dialogbox ul {
+
+  padding: 0.5rem;
   margin: 0.5rem;
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .abroad-dialogbox ul li a:hover {
@@ -160,20 +167,82 @@ header .navbar .abroad-dialogbox ul  {
 
 /* dialogbox on hover css :end */
 
+
+
+
+/* login button css starts */
+
+.login button {
+  background: linear-gradient(90deg, #a89fff 0%, #cbc7f0 100%);
+  border: none;
+  box-shadow: 0 4px 16px rgba(168, 159, 255, 0.15);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  outline: none;
+}
+
+.login button:hover {
+  background: linear-gradient(90deg, #110053 0%, #a89fff 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.25);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* mine code start */
+nav .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0.3rem 1rem; */
+}
+
+.login button {
+  font-weight: 600;
+  color: #000;
+   font-size: 15px;
+  padding: 0.48rem 2.3rem;
+  border-radius: 13px;
+
+}
+/* mine code end */
+
+/* login button css ends */
+
+
+/* logo css starts  */
+
+.navbar .logo {
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: none;
+}
+
+.navbar .logo:hover {
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.45), 0 2px 8px rgba(17, 0, 83, 0.12);
+  transform: scale(1.08);
+}
+
+.navbar .logo img {
+  transition: transform 0.3s;
+}
+
+.navbar .logo:hover img {
+  transform: scale(1.12);
+}
+
+/* mine code start */
 .navbar .logo{
-     display: flex; 
-    align-items: center;
-    justify-content: center;
-    color: #110053; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
-
-img{
-    width: auto;
-    height:3rem;
-    padding: 1rem;
-    margin-left: 20px;
+.navbar .logo img{
+  height: 3.5rem;
+  width: 9rem;
 }
+/* mine code end */
 
-/* home-box css starts  */
 
-/* home-box css ends */
+
+/* logo css end  */
