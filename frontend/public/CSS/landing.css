@@ -8,6 +8,10 @@ body {
 
 }
 
+section{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 header .navbar {
   display: flex;
   justify-content: space-around
@@ -292,7 +296,7 @@ nav .login {
 
 .heading-box p {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: rgb(25, 25, 25);
   margin: 0px;
   padding: 10px;
@@ -495,7 +499,7 @@ section .our-specialization h1 {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem 5rem;
+  margin: 2rem 5rem;
 }
 
 .course .facuilty {
@@ -587,6 +591,8 @@ section .our-specialization h1 {
 }
 
 /* box css ends */
+
+/* our specialization section ends  */
 
 /* getting started css starts */
 
@@ -687,9 +693,601 @@ section .center{
   box-shadow: 0 8px 32px rgba(168, 159, 255, 0.25);
   transform: translateY(-2px) scale(1.04);
 }
-
 /* getting started css ends */
 
+/* choose-us section css starts */
+.choose-us {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+}
 
-/* our specialization section ends  */
-/* body section css end */
+.choose-us h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #110053;
+}
+
+.choose-us p {
+  font-size: 1rem;
+  color: rgb(25, 25, 25);
+  margin-top: 0.5rem;
+  font-weight: 600;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.choose-us-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.choose-us-item {
+  background: linear-gradient(135deg, #f5f5ff 60%, #e9e6fa 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(168, 159, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0px 1.5rem;
+}
+
+.choose-us-item::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle at 60% 40%, #a89fff 70%, transparent 100%);
+  opacity: 0.18;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.choose-us-item::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 40% 60%, #9489f8 60%, transparent 100%);
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.choose-us-item > * {
+  position: relative;
+  z-index: 1;
+}
+
+.choose-us-item:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.25);
+}
+
+.choose-us-item h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #110053;
+}
+
+.choose-us-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #9489f8;
+  margin-top: 0.5rem;
+}
+
+.choose-us-item p {
+  font-size: 1rem;
+  color: rgb(25, 25, 25);
+  margin-top: 0.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+/* choose-us section css ends */
+
+/* study in different countries section starts */
+.heading-paragraph-and-boxes{
+ 
+ margin-top: 2rem 5rem !important;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 2rem;
+}
+
+.heading-And-paragraph h2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #110053;
+}
+
+.heading-And-paragraph p{
+  text-align: center;
+  font-size: 1rem;
+  color: #050468;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+
+} 
+
+.country-boxes{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:2rem;
+  margin-top: 2rem;
+}
+
+.country-boxes .cboxes{
+ width: 350px;
+  height: auto;
+  border: 1px solid #a89fff;
+  border-radius: 20px;
+  margin-top:10px 10px;
+
+}
+
+.country-boxes .cboxes img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.country-boxes .cboxes h3{
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #110053;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.cboxes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.country-boxes .cboxes a{
+  cursor: pointer;
+  font-size: 1rem;
+  color: #110053;
+  font-weight: 600;
+  margin: 1rem 0.58rem; 
+  text-decoration: none;
+}
+.country-boxes .cboxes a:hover{
+  color: #a89fff;
+  text-decoration: underline;
+}
+
+
+
+/* Box background and hover effect css starts  */
+.country-boxes .cboxes {
+  box-shadow: 0 4px 24px -6px rgba(17, 0, 83, 0.45), 0 2px 8px -1px rgba(17, 0, 83, 0.65);
+  transition: box-shadow 0.3s, border-color 0.3s;
+  border-color: #a89fff;
+}
+
+.country-boxes .cboxes:hover {
+  box-shadow: none;
+  border-color: #cbc7f0;
+}
+/* Box background and hover effect css ends  */
+
+/* study in different countries section ends */
+
+
+/* why study abroad css starts */
+.why{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.why ul{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin:0px 5rem
+  ;
+  gap: 1rem;
+}
+
+.why ul li{
+  list-style: disc; /* Show bullet */
+  display: list-item; /* Use default list-item for bullets */
+  font-size: 1.2rem;
+  align-items: start;
+  font-weight: 600;
+  color: #110053;
+  gap: 1rem;
+}
+
+.why h1{
+  text-align: center;
+  font-size: 2rem;  
+  font-weight: 900;
+  color: #110053;
+  text-transform: uppercase;
+}
+/* why study abroad css ends */
+
+
+/* map and form css starts */
+
+/* contact form css starts */
+
+.form-&-map {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.contact-form form {
+  background: linear-gradient(120deg, #f5f5ff 0%, #e9e6fa 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.13);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #110053;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  color: #3d3d6b;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.contact-form .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1.5px solid #a89fff;
+  background: #fff;
+  font-size: 1rem;
+  color: #110053;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 0.2rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus {
+  border-color: #6a7cff;
+  box-shadow: 0 0 0 2px #a89fff33;
+}
+
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg width='16' height='16' fill='gray' xmlns='http://www.w3.org/2000/svg'><path d='M4 6l4 4 4-4'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+}
+
+.contact-form .submit-btn {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.85rem 0;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(90deg, #6a7cff 0%, #a89fff 100%);
+  color: #110053  ;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(168, 159, 255, 0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.contact-form .submit-btn:hover {
+  background: linear-gradient(90deg, #110053 0%, #6a7cff 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.18);
+}
+
+/* contact form css ends */
+
+/* map section css starts */
+
+.contact-map {
+   background: linear-gradient(120deg, #f5f5ff 0%, #e9e6fa 100%);
+  border-radius: 20px;
+ box-shadow: 0 8px 32px rgba(168, 159, 255, 0.13);
+  padding: 0px  1rem 1rem 1rem;
+  max-width: 420px;
+  width: 100%;
+  min-width: 550px;
+  min-height: 550px; ;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact-map h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #110053;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contact-map p {
+  font-size: 1rem;
+  color: #3d3d6b;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(168, 159, 255, 0.10);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%px; /* Match the form's visual height */
+  border: none;
+  border-radius: 16px;
+  display: block;
+}
+
+/* map section css ends  */
+
+/* map and form css ends  */
+
+/* Review section css starts */
+.student-review{
+  background: linear-gradient(120deg, #f5f5ff 0%, #e9e6fa 100%);
+  width: 100vw;
+  height: auto  ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+ 
+}
+
+.student-review h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #110053;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.student-review p {
+  font-size: 1rem;
+  color: #3d3d6b;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+
+
+.student-review .review-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.review-image{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review-image h2{
+  font: 600 1.2rem "Nunito Sans", sans-serif;
+}
+
+.review-image img{
+  width: 70px;
+  height: auto;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.18), 0 2px 8px rgba(17, 0, 83, 0.10);
+}
+.student-review .review-box .review{
+  background: linear-gradient(120deg, #f5f5ff 0%, #e9e6fa 100%);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(168, 159, 255, 0.13);
+  padding: 1.5rem;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Review section css ends */
+
+
+/* ===== Footer Section Styles starts ===== */
+.footer {
+  background: linear-gradient(120deg, #e9e6fa 0%, #cbc7f0 100%);
+  color: #110053;
+  padding: 3rem 0 0 0;
+  margin-top: 3rem;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -4px 32px rgba(168, 159, 255, 0.10);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 0rem 2rem;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social,
+.footer-destinations {
+  flex: 1 1 180px;
+  min-width: 180px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3,
+.footer-destinations h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #6a7cff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-links ul,
+.footer-contact ul,
+.footer-social ul,
+.footer-destinations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li,
+.footer-social ul li,
+.footer-destinations ul li {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-links ul li a,
+.footer-destinations ul li a,
+.footer-social ul li a {
+  color: #110053;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links ul li a:hover,
+.footer-destinations ul li a:hover,
+.footer-social ul li a:hover {
+  color: #6a7cff;
+  text-decoration: underline;
+}
+
+.footer-contact ul li i {
+  margin-right: 0.7rem;
+  color: #6a7cff;
+}
+
+.footer-contact p {
+  margin-bottom: 0.7rem;
+  color: #3d3d6b;
+  font-size: 0.98rem;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-social ul li a i {
+  margin-right: 0.5rem;
+  color: #6a7cff;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+.footer-destinations ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-destinations ul li a {
+  font-weight: 600;
+}
+
+.footer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 18px;
+  background: linear-gradient(90deg, #a89fff 0%, #6a7cff 100%);
+  opacity: 0.13;
+  margin-top: 2rem;
+  border-radius: 0 0 32px 32px;
+}
+/* ===== Footer Section Styles starts ===== */
