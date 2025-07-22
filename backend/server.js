@@ -1,0 +1,1 @@
+colsole.js("hello dear")
