@@ -43,7 +43,7 @@ router.post('/', upload.none(), async (req, res) => {
       `Email: ${email}\n` +
       `Phone No: ${phone_no}\n` +
       `Message: ${message}\n`;
-    await sendEmail('repaircloudnepal@gmail.com', subject, text); // Use sendEmail function
+    await sendEmail('sanjeet@gmail.com', subject, text); // Use sendEmail function
     res.send('Message sent successfully');
   } catch (error) {
     console.error('Error processing contact form submission:', error);
