@@ -2,11 +2,16 @@
 import config from "./config/config.js";
 import bodyParser from "body-parser";
 import connectDB from "./config/database.js";
+import contactRoutes from "./routers/contactRoutes.js";
  
 const app = express();
 app.use(bodyParser.json());
 
 connectDB();
+
+app.use("/api/contacts", contactRoutes);
+
+
 
 app.get("/", (req, res) => {
   res.json({
