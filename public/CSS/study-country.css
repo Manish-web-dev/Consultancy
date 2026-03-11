@@ -50,6 +50,14 @@ body.theme-uae .hero {
   background: linear-gradient(120deg, rgba(255, 224, 179, 0.24) 0%, rgba(168, 159, 255, 0.08) 52%, #ffffff 100%);
 }
 
+body.theme-india .hero {
+  background: linear-gradient(120deg, rgba(255, 214, 153, 0.28) 0%, rgba(148, 137, 248, 0.10) 52%, #ffffff 100%);
+}
+
+body.theme-italy .hero {
+  background: linear-gradient(120deg, rgba(186, 255, 210, 0.24) 0%, rgba(255, 182, 193, 0.14) 52%, #ffffff 100%);
+}
+
 body.theme-studyabroad .hero {
   background: linear-gradient(120deg, rgba(168, 159, 255, 0.16) 0%, rgba(106, 124, 255, 0.10) 48%, #ffffff 100%);
 }
