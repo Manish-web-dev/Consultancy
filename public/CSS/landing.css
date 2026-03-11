@@ -1367,13 +1367,33 @@ section .center{
 }
 
 .student-review .review-box{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
   gap: 2rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 0.75rem;
   max-width: 1050px;
   width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.student-review .review-box::-webkit-scrollbar {
+  height: 10px;
+}
+
+.student-review .review-box::-webkit-scrollbar-track {
+  background: rgba(168, 159, 255, 0.18);
+  border-radius: 999px;
+}
+
+.student-review .review-box::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #a89fff 0%, #6a7cff 100%);
+  border-radius: 999px;
 }
 
 .review-image{
@@ -1403,15 +1423,17 @@ section .center{
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(168, 159, 255, 0.15);
   padding: 1.8rem;
-  width: 100%;
+  width: 320px;
   max-width: 360px;
+  flex: 0 0 320px;
   min-height: 240px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(168, 159, 255, 0.1);
-  margin: 0 auto;
+  margin: 0;
+  scroll-snap-align: start;
 }
 
 .student-review .review-box .review:hover {
@@ -2012,20 +2034,22 @@ section .center{
   }
 
   .student-review .review-box {
-    grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 0 0.5rem;
+    padding: 0 0.5rem 0.75rem;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .student-review .review-box .review {
     padding: 1rem;
     min-height: auto;
+    flex: 0 0 85%;
     width: 85%;
     max-width: 320px;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
   }
 
